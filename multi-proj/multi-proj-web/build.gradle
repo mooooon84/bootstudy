@@ -1,0 +1,14 @@
+apply plugin: 'war'
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	//testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	
+	compile 'javax.servlet:jstl'
+	compile 'org.apache.tomcat.embed:tomcat-embed-jasper'
+	providedRuntime "org.springframework.boot:spring-boot-starter-tomcat"	
+}
+
+//test {
+//	useJUnitPlatform()
+//}
