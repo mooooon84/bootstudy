@@ -13,4 +13,9 @@ spring:
     view:
       prefix: /WEB-INF/views/
       suffix: .jsp
-      
+ 
+mybatis:
+  type-aliases-package: com.moon.multiProj.model
+  mapper-locations: classpath:mybatis/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
